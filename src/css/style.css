@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111116;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+main .left {
+  width: 220px;
+  height: 100%;
+  background: #1a1920;
+  overflow: hidden;
+}
+main .right {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li.logo {
+  text-align: center;
+  margin: 10px 0;
+}
+nav ul li.people {
+  display: flex;
+  padding: 13px;
+  transition: 0.2s;
+}
+nav ul li.people img {
+  width: 45px;
+  height: 45px;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+nav ul li.people .right {
+  flex: 1;
+  margin-left: 10px;
+}
+nav ul li.people .right p.username {
+  font-weight: bold;
+}
+nav ul li.people .right p.lastmsg {
+  font-size: 0.75rem;
+  color: #afb4d3;
+}
+nav ul li.people:hover {
+  background: rgba(107, 107, 255, 0.4196078431);
+}
+
+.send {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px;
+}
+.send .imageprev {
+  background-color: #1a1920;
+  width: 100%;
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 0.75rem;
+  height: 150px;
+  display: flex;
+  overflow-y: none;
+  overflow-x: auto;
+}
+.send .imageprev img {
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+.send .emojiprev {
+  background-color: #1a1920;
+  width: 450px;
+  height: 300px;
+  margin: 10px 5px;
+  border-radius: 0.75rem;
+  padding: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.send .emojiprev ul {
+  list-style: none;
+  padding-left: 0;
+}
+.send .emojiprev ul li {
+  display: inline-block;
+  margin: 5px;
+  justify-content: center;
+}
+.send .emojiprev ul li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.send .emojiprev ul p.sep {
+  text-align: right;
+  padding: 5px 10px;
+  border-bottom: 1px solid #afb4d3;
+  margin: 0 0 10px 0;
+  font-style: italic;
+  color: #afb4d3;
+}
+.send form {
+  display: flex;
+  width: 100%;
+}
+.send form input, .send form textarea, .send form button {
+  margin: 0 5px;
+}
+.send form textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  background-color: #1a1920;
+  border-radius: 0.6rem;
+  resize: none;
+}
+.send form button {
+  background-color: #1a1920;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.send form button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #6b6bff;
+  transition: 0.2s;
+}
+.send form button:hover {
+  background-color: #6b6bff;
+}
+.send form button:hover svg {
+  fill: #1a1920;
+}
+
+.chat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.chat .ccenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 400px;
+}
+.chat .ccenter svg {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  fill: #6b6bff;
+}
+.chat .ccenter p {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggo</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="./src/img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <main>
+        <div class="left">
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <img src="./src/img/logo.svg" alt="logo">
+                    </li>
+                    <hr>
+                    <a href="#">
+                        <li class="people">
+                            <img src="https://placehold.co/40x40" alt="">
+                            <div class="right">
+                                <p class="username">Username</p>
+                                <p class="lastmsg">Last message</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="people">
+                            <img src="https://placehold.co/40x40" alt="">
+                            <div class="right">
+                                <p class="username">Username</p>
+                                <p class="lastmsg">Last message</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="people">
+                            <img src="https://placehold.co/40x40" alt="">
+                            <div class="right">
+                                <p class="username">Username</p>
+                                <p class="lastmsg">Last message</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="people">
+                            <img src="https://placehold.co/40x40" alt="">
+                            <div class="right">
+                                <p class="username">Username</p>
+                                <p class="lastmsg">Last message</p>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <!-- Chat area -->
+            <div class="chat">
+                <div class="ccenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M21 6h-2l-1.27-1.27A2.49 2.49 0 0 0 16 4h-2.5A2.64 2.64 0 0 0 11 2v6.36a4.38 4.38 0 0 0 1.13 2.72 6.57 6.57 0 0 0 4.13 1.82l3.45-1.38a3 3 0 0 0 1.73-1.84L22 8.15a1.06 1.06 0 0 0 0-.31V7a1 1 0 0 0-1-1zm-5 2a1 1 0 1 1 1-1 1 1 0 0 1-1 1z">
+                        </path>
+                        <path
+                            d="M11.38 11.74A5.24 5.24 0 0 1 10.07 9H6a1.88 1.88 0 0 1-2-2 1 1 0 0 0-2 0 4.69 4.69 0 0 0 .48 2A3.58 3.58 0 0 0 4 10.53V22h3v-5h6v5h3v-8.13a7.35 7.35 0 0 1-4.62-2.13z">
+                        </path>
+                    </svg>
+                    <p>Well, you don't seem to have had much conversation with this person.</p>
+                </div>
+            </div>
+
+            <!-- send messaage -->
+            <div class="send">
+                <!-- imgprev -->
+                <!-- <div class="imageprev">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/60x100" alt="">
+                    <img src="https://placehold.co/40x40" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/40x40" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/40x40" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                    <img src="https://placehold.co/120x50" alt="">
+                </div> -->
+
+                <!-- emoji -->
+                <!-- <div class="emojiprev">
+                    <ul>
+                        <p class="sep">Latest</p>
+                        <li>
+                            <img src="https://placehold.co/40x40" alt="">
+                        </li>
+                        <li>
+                            <img src="https://placehold.co/40x40" alt="">
+                        </li>
+                    </ul>
+                </div> -->
+
+                <!-- form -->
+                <form id="message" action="" method="post">
+                    <button id="emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                            </path>
+                            <path
+                                d="M14.828 14.828a3.988 3.988 0 0 1-2.02 1.09 4.108 4.108 0 0 1-1.616 0 4.103 4.103 0 0 1-.749-.232 4.161 4.161 0 0 1-.679-.368 4.115 4.115 0 0 1-1.082-1.082l-1.658 1.117c.215.319.462.619.733.889a5.991 5.991 0 0 0 8.485.002c.272-.271.52-.571.734-.891l-1.658-1.117c-.143.211-.307.41-.49.592z">
+                            </path>
+                            <circle cx="8.5" cy="10.5" r="1.5"></circle>
+                            <path d="M15.5 10c-2 0-2.5 2-2.5 2h5s-.501-2-2.5-2z"></path>
+                        </svg>
+                    </button>
+                    <button id="addimg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M4 5h13v7h2V5c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h8v-2H4V5z">
+                            </path>
+                            <path d="m8 11-3 4h11l-4-6-3 4z"></path>
+                            <path d="M19 14h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path>
+                        </svg>
+                    </button>
+                    <textarea name="m" id="messageTextarea" placeholder="Your message..." rows="1" required></textarea>
+                    <button id="send">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="m21.426 11.095-17-8A.999.999 0 0 0 3.03 4.242L4.969 12 3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81zM5.481 18.197l.839-3.357L12 12 6.32 9.16l-.839-3.357L18.651 12l-13.17 6.197z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script>
+    // Fonction pour ajuster la taille du textarea en fonction de son contenu
+    function adjustTextareaHeight() {
+        const textarea = document.getElementById('messageTextarea');
+        const shouldScrollToBottom = textarea.scrollTop === (textarea.scrollHeight - textarea.clientHeight);
+        textarea.style.height = 'auto'; // Réinitialise la hauteur à auto
+        textarea.style.height = textarea.scrollHeight + 'px'; // Ajuste la hauteur en fonction de la hauteur du contenu
+
+        // Limiter la taille maximale du textarea à 200 pixels
+        const maxHeight = 200;
+        if (textarea.scrollHeight > maxHeight) {
+            textarea.style.overflowY = 'scroll'; // Activer la barre de défilement verticale
+            textarea.style.height = maxHeight + 'px'; // Limiter la hauteur à la taille maximale
+        } else {
+            textarea.style.overflowY = 'auto'; // Activer la barre de défilement verticale automatiquement si nécessaire
+        }
+
+        if (shouldScrollToBottom) {
+            textarea.scrollTop = textarea.scrollHeight; // Faire défiler vers le bas si nécessaire
+        }
+    }
+
+    // Fonction pour gérer l'événement de pression de la touche Enter
+    function handleEnterKeyPress(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Empêcher le saut de ligne par défaut
+            const textarea = document.getElementById('messageTextarea');
+            const scrollHeightBefore = textarea.scrollHeight;
+            textarea.value += '\n'; // Ajouter un saut de ligne à la valeur du textarea
+            adjustTextareaHeight(); // Ajuster la taille du textarea
+            if (textarea.scrollHeight > scrollHeightBefore) {
+                textarea.scrollTop = textarea.scrollHeight; // Faire défiler vers le bas
+            }
+        }
+    }
+
+    // Appeler la fonction handleEnterKeyPress lorsqu'une touche est enfoncée dans le textarea
+    document.getElementById('messageTextarea').addEventListener('keydown', handleEnterKeyPress);
+
+    // Appeler la fonction d'ajustement lorsque le contenu du textarea change
+    document.getElementById('messageTextarea').addEventListener('input', adjustTextareaHeight);
+
+    // Appeler la fonction d'ajustement lors du chargement de la page
+    window.addEventListener('load', adjustTextareaHeight);
+</script>
+</html>
