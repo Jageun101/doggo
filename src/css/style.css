@@ -76,6 +76,7 @@ nav ul li.people:hover {
   left: 0;
   width: 100%;
   padding: 6px;
+  background-color: #111116;
 }
 .send .imageprev {
   background-color: #1a1920;
@@ -193,4 +194,52 @@ nav ul li.people:hover {
 }
 .chat .ccenter p {
   font-size: 20px;
+}
+.chat .containermsg {
+  display: flex;
+  flex-direction: column;
+  color: #afb4d3;
+  height: 100%;
+  overflow-y: auto;
+}
+.chat .containermsg .msg {
+  padding: 10px;
+}
+.chat .containermsg .msg img {
+  height: 55px;
+}
+.chat .containermsg .msg p > img {
+  height: 20px;
+}
+.chat .containermsg .msg.msgleft {
+  background-color: #1a1920;
+  text-align: left;
+  align-self: flex-start;
+  max-width: 56%;
+  border-radius: 0.75rem 0.75rem 0.75rem 0;
+  margin: 10px 10px 0 10px;
+}
+.chat .containermsg .msg.msgright {
+  background-color: #6b6bff;
+  text-align: right;
+  color: #fff;
+  align-self: flex-end;
+  max-width: 50%;
+  border-radius: 0.75rem 0.75rem 0 0.75rem;
+  margin: 10px 10px 0 10px;
+}
+.chat .containermsg .msg.sticker {
+  background-color: unset;
+  margin: 0;
+  padding: unset;
+  margin: 10px 10px 0 10px;
+}
+.chat .containermsg .msg.sticker img {
+  border-radius: 0.75rem;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.chat .btm {
+  padding: 30px;
 }/*# sourceMappingURL=style.css.map */
