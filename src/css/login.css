@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111116;
+  color: #fff;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+main .ccenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+main .ccenter .left {
+  width: 300px;
+  text-align: center;
+}
+main .ccenter .left img {
+  height: 200px;
+}
+main .ccenter .right {
+  width: 300px;
+}
+main .ccenter .right form h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+main .ccenter .right form input[type=text],
+main .ccenter .right form input[type=password] {
+  width: 100%;
+  font-size: 18px;
+  background-color: #1a1920;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  margin: 0 0 18px 0;
+  outline: none;
+}
+main .ccenter .right form input[type=submit] {
+  border: none;
+  background-color: #6b6bff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+}
+main .ccenter .right form input[type=submit]:hover {
+  opacity: 0.7;
+}
+main .ccenter .right button {
+  width: 100%;
+  margin: 15px 0 0 0;
+  background-color: #1a1920;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .ccenter .right button:hover {
+  opacity: 0.7;
+}
+main .watermark {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: -1;
+  opacity: 0.1;
+}
+main .watermark img {
+  width: 250px;
+  height: 250px;
+}/*# sourceMappingURL=login.css.map */
