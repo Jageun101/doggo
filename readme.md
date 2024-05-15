@@ -18,8 +18,12 @@ a little project of my own which you are free to help create and improve.
 - *Docker (future)*
 
 ## Installation
-1. host the site (xampp, wamp, mamp, ...) 
-2. Add the site to the hosting service, and you're done. No configuration required.
+1. Clone the repository 
+```sh
+git clone https://github.com/kerogs/doggo.git
+```
+2. host the site (xampp, wamp, mamp, lamp ...) 
+3. Ready To Use.
 
 ## To do
 - [ ] Add friends
